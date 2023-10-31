@@ -1,0 +1,101 @@
+.about {
+    width: 100%;
+    min-height: 100vh;
+    background: var(--color-bg);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 4rem;
+
+    .info {
+        width: 100%;
+        text-align: center;
+
+        h3 {
+            font-size: 4rem;
+            color: var(--color-golden);
+            line-height: 80px;
+            font-family: var(--font-cormorant);
+
+            @media screen and (max-width: 900px) {
+                font-size: 2rem;
+                line-height: 50px;
+                text-align: center;
+            }
+        }
+        p {
+            width: 100%;
+            margin-top: 1rem;
+            color: var(--color-grey);
+            font-family: var(--font-alt);
+            font-size: 18px;
+
+            @media screen and (max-width: 900px) {
+                font-size: 14px;
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        .items {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 0.5rem;
+            margin-top: 1rem;
+
+            div {
+                display: flex;
+                flex-direction: column;
+
+                h3 {
+                    color: var(--color-white);
+                    font-family: var(--font-cormorant);
+                    font-size: 2rem;
+                    line-height: 25px;
+                    @media screen and (max-width: 900px) {
+                        font-size: 1.5rem;
+                        text-align: center;
+                    }
+                }
+                h1 {
+                    font-size: 4rem;
+                    color: var(--color-golden);
+                    font-family: var(--font-cormorant);
+                    line-height: 100px;
+                    @media screen and (max-width: 900px) {
+                        font-size: 3rem;
+                        text-align: center;
+                    }
+                }
+                p {
+                    width: 100%;
+                    color: var(--color-grey);
+                    font-family: var(--font-alt);
+                    font-size: 14px;
+
+                    @media screen and (max-width: 900px) {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .image {
+        width: 80%;
+        height: 80%;
+
+        @media screen and (max-width: 900px) {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    @media screen and (max-width: 900px) {
+        flex-direction: column;
+        padding: 2rem 1rem;
+    }
+}

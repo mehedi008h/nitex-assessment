@@ -4,7 +4,7 @@ import { banner_img } from "../../constants/images";
 import styles from "./hero.module.scss";
 const Hero = () => {
     return (
-        <main className={styles.hero}>
+        <main id="home" className={styles.hero}>
             <div className={styles.info}>
                 <h3>Chase The New Flavor</h3>
                 <h1>THE KEY TO</h1>
