@@ -6,6 +6,7 @@ import {
     Hero,
     Navbar,
     Service,
+    Testimonial,
 } from "./components";
 import "./App.scss";
 
@@ -17,6 +18,7 @@ function App() {
             <Service />
             <About />
             <Gallery />
+            <Testimonial />
             <Contact />
             <Footer />
         </>

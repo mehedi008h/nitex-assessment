@@ -6,6 +6,7 @@ export { default as Contact } from "./contact/Contact";
 export { default as Footer } from "./footer/Footer";
 export { default as Service } from "./service/Service";
 export { default as FoodCard } from "./service/FoodCard";
+export { default as Testimonial } from "./testimonial/Testimonial";
 
 export { default as Navbar } from "./navbar/Navbar";
 export { default as SocialLink } from "./navbar/SocialLink";

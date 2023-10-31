@@ -1,0 +1,104 @@
+.testimonial {
+    width: 100%;
+    min-height: 100vh;
+    background: var(--color-bg);
+    text-align: center;
+    padding: 0 12rem;
+
+    h3 {
+        color: var(--color-white);
+        font-family: var(--font-cormorant);
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+
+        @media screen and (max-width: 900px) {
+            font-size: 1.5rem;
+            text-align: center;
+        }
+    }
+    h1 {
+        font-size: 4rem;
+        color: var(--color-golden);
+        line-height: 80px;
+        font-family: var(--font-cormorant);
+
+        @media screen and (max-width: 900px) {
+            font-size: 2rem;
+            line-height: 50px;
+            text-align: center;
+        }
+    }
+
+    div {
+        margin-top: 1rem;
+        .swiper {
+            width: 400px;
+            height: 520px;
+
+            @media screen and (max-width: 900px) {
+                width: 280px;
+                height: 520px;
+            }
+
+            .swiper_slide {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 1rem;
+                border-radius: 18px;
+                font-size: 22px;
+                font-weight: bold;
+                color: var(--color-golden);
+                background-color: var(--color-white);
+
+                p {
+                    font-size: 14px;
+                    font-family: var(--font-alt);
+                    color: gray;
+                    font-style: italic;
+                }
+                div {
+                    width: 400px;
+                    margin-top: 4rem;
+
+                    @media screen and (max-width: 900px) {
+                        width: 200px;
+                    }
+                    .avatar {
+                        height: 6rem;
+                        width: 6rem;
+                        background: var(--color-bg);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 50%;
+                        margin: 0 auto;
+                        color: var(--color-golden);
+
+                        @media screen and (max-width: 900px) {
+                            height: 4rem;
+                            width: 4rem;
+                        }
+                    }
+                    h3 {
+                        color: var(--color-bg);
+                        margin-top: 1rem;
+                        font-family: var(--font-alt);
+                        font-size: 24px;
+
+                        @media screen and (max-width: 900px) {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 900px) {
+        padding: 2rem 1rem;
+    }
+}
