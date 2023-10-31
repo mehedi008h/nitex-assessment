@@ -1,0 +1,121 @@
+.service {
+    width: 100%;
+    min-height: 100vh;
+    background: var(--color-bg);
+    text-align: center;
+    padding: 0 12rem;
+
+    h3 {
+        color: var(--color-white);
+        font-family: var(--font-cormorant);
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+
+        @media screen and (max-width: 900px) {
+            font-size: 1.5rem;
+            text-align: center;
+        }
+    }
+    h1 {
+        font-size: 4rem;
+        color: var(--color-golden);
+        line-height: 80px;
+        font-family: var(--font-cormorant);
+
+        @media screen and (max-width: 900px) {
+            font-size: 2rem;
+            line-height: 50px;
+            text-align: center;
+        }
+    }
+
+    .foods {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 1.5rem 0;
+        gap: 2rem;
+
+        .foodCard {
+            width: 100%;
+            border: 1px solid var(--color-gray);
+            padding: 1rem;
+            border-radius: 5px;
+            text-align: start;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            }
+
+            .image {
+                width: 250px;
+                height: 250px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                    margin-left: 25px;
+                }
+            }
+            .info {
+                margin-top: 1rem;
+
+                h3 {
+                    font-family: var(--font-cormorant);
+                    text-transform: capitalize;
+                    color: var(--color-golden);
+                }
+                p {
+                    color: var(--color-white);
+                    font-size: 14px;
+                    margin-top: -5px;
+                }
+                div {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-top: 0.5rem;
+                    h4 {
+                        color: var(--color-white);
+                    }
+
+                    div {
+                        display: flex;
+                        align-items: center;
+                        gap: 5px;
+
+                        div {
+                            height: 2rem;
+                            width: 2rem;
+                            cursor: pointer;
+                            color: var(--color-white);
+                            border-radius: 5px;
+
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                        .favorite {
+                            background-color: maroon;
+                        }
+                        .share {
+                            background-color: teal;
+                        }
+                    }
+                }
+            }
+        }
+        @media screen and (max-width: 900px) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    @media screen and (max-width: 900px) {
+        padding: 2rem 1rem;
+    }
+}

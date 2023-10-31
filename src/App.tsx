@@ -1,4 +1,12 @@
-import { About, Gallery, Hero, Navbar } from "./components";
+import {
+    About,
+    Contact,
+    Footer,
+    Gallery,
+    Hero,
+    Navbar,
+    Service,
+} from "./components";
 import "./App.scss";
 
 function App() {
@@ -6,8 +14,11 @@ function App() {
         <>
             <Navbar />
             <Hero />
+            <Service />
             <About />
             <Gallery />
+            <Contact />
+            <Footer />
         </>
     );
 }

@@ -40,7 +40,7 @@ const Gallery = () => {
     }, []);
 
     return (
-        <div className={styles.gallery}>
+        <div id="gallery" className={styles.gallery}>
             {/* gallery info  */}
             <div className={styles.info}>
                 <h3>Instagram</h3>

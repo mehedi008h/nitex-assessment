@@ -6,11 +6,16 @@
     align-items: center;
     padding: 0 4rem;
 
-    h1 {
-        font-size: 2rem;
-        color: var(--color-golden);
-        font-family: var(--font-cormorant);
-        font-weight: 900;
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 3px;
+        h1 {
+            font-size: 2rem;
+            color: var(--color-golden);
+            font-family: var(--font-cormorant);
+            font-weight: 900;
+        }
     }
 
     .links {
