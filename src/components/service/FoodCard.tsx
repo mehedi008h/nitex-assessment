@@ -1,10 +1,15 @@
+import { motion } from "framer-motion";
 import { AiOutlineHeart, AiOutlineShareAlt } from "react-icons/ai";
 import styles from "./service.module.scss";
 import { banner_img } from "../../constants/images";
 
 const FoodCard = () => {
     return (
-        <div className={styles.foodCard}>
+        <motion.div
+            whileInView={{ scale: [0.9, 1] }}
+            transition={{ duration: 0.25 }}
+            className={styles.foodCard}
+        >
             {/* img  */}
             <div className={styles.image}>
                 <img src={banner_img} alt="" />
@@ -28,7 +33,7 @@ const FoodCard = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </motion.div>
     );
 };
 

@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { BsInstagram } from "react-icons/bs";
 import styles from "./gallery.module.scss";
 
@@ -42,7 +43,11 @@ const Gallery = () => {
     return (
         <div id="gallery" className={styles.gallery}>
             {/* gallery info  */}
-            <div className={styles.info}>
+            <motion.div
+                whileInView={{ x: [-100, 0], opacity: [0, 1] }}
+                transition={{ duration: 0.5 }}
+                className={styles.info}
+            >
                 <h3>Instagram</h3>
                 <h1>Photo Gallery</h1>
                 <p>
@@ -54,7 +59,7 @@ const Gallery = () => {
                 <button className={styles.watch_btn}>
                     <BsInstagram /> View More
                 </button>
-            </div>
+            </motion.div>
             {/* gallery image slider  */}
             <div className={styles.image}>
                 <Swiper

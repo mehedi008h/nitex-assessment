@@ -2,6 +2,7 @@ import { HiArrowSmRight } from "react-icons/hi";
 import { RxVideo } from "react-icons/rx";
 import { banner_img } from "../../constants/images";
 import styles from "./hero.module.scss";
+import { AiFillStar } from "react-icons/ai";
 const Hero = () => {
     return (
         <main id="home" className={styles.hero}>
@@ -26,6 +27,11 @@ const Hero = () => {
             </div>
             <div className={styles.image}>
                 <img src={banner_img} width="100%" height="100%" alt="" />
+
+                <div className={styles.rating}>
+                    <AiFillStar color="maroon" size={30} />
+                    <span>4.2 (129)</span>
+                </div>
             </div>
         </main>
     );

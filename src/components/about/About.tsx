@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import styles from "./about.module.scss";
 import { about_img } from "../../constants/images";
 import Item from "./Item";
@@ -5,7 +6,11 @@ import Item from "./Item";
 const About = () => {
     return (
         <div id="about" className={styles.about}>
-            <div className={styles.info}>
+            <motion.div
+                whileInView={{ x: [-100, 0], opacity: [0, 1] }}
+                transition={{ duration: 0.5 }}
+                className={styles.info}
+            >
                 <h3>About Us</h3>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -35,10 +40,14 @@ const About = () => {
                     Odit, neque aut delectus"
                     />
                 </div>
-            </div>
-            <div className={styles.image}>
+            </motion.div>
+            <motion.div
+                whileInView={{ scale: [0.9, 1] }}
+                transition={{ duration: 0.25 }}
+                className={styles.image}
+            >
                 <img src={about_img} width="100%" height="100%" alt="" />
-            </div>
+            </motion.div>
         </div>
     );
 };

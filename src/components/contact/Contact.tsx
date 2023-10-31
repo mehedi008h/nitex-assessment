@@ -1,12 +1,17 @@
+import { motion } from "framer-motion";
 import { findus_img } from "../../constants/images";
 import styles from "./contact.module.scss";
 import { BiMapPin } from "react-icons/bi";
 
 const Contact = () => {
     return (
-        <div className={styles.contact}>
+        <div id="contact" className={styles.contact}>
             {/* gallery info  */}
-            <div className={styles.info}>
+            <motion.div
+                whileInView={{ x: [-100, 0], opacity: [0, 1] }}
+                transition={{ duration: 0.5 }}
+                className={styles.info}
+            >
                 <h3>Contact</h3>
                 <h1>Find Us</h1>
                 <p>
@@ -21,7 +26,7 @@ const Contact = () => {
                     <BiMapPin />
                     Find Us
                 </button>
-            </div>
+            </motion.div>
             {/* gallery image slider  */}
             <div className={styles.image}>
                 <img src={findus_img} width="100%" height="100%" alt="" />

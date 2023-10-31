@@ -3,7 +3,7 @@ import styles from "./service.module.scss";
 
 const Service = () => {
     return (
-        <div className={styles.service}>
+        <div id="food" className={styles.service}>
             <h3>Popular Menu</h3>
             <h1>
                 Amazing Food Served <br /> With Delicacy

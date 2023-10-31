@@ -12,7 +12,7 @@ import { EffectCards } from "swiper/modules";
 
 const Testimonial = () => {
     return (
-        <div className={styles.testimonial}>
+        <div id="testimonial" className={styles.testimonial}>
             <h3>TESTIMONIALS</h3>
             <h1>What our customers say</h1>
             <div>
